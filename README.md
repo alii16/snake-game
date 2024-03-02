@@ -38,5 +38,4 @@ If you have any ideas to make it more interesting, please submit a pull request 
 
 # this code belong to alii16
 
-# subscribe this account to learn
 > Youtube [CodingNepal](https://www.youtube.com/codingnepal)

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin-top: -100px;
+    text-align: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: yellow;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+
+
+.game-details {
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: beige;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background: red;
+}
+
+.play-board .head {
+    background: black;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls i {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: yellow;
+    transition: background-color 0.3s;
+}
+
+.controls i:hover {
+    background-color: white;
+}
+
+.controls i[data-key="ArrowLeft"] {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.controls i[data-key="ArrowRight"] {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.controls i[data-key="ArrowUp"] {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.controls i[data-key="ArrowDown"] {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.controls i[data-key="ArrowMid"] {
+    grid-row: 2;
+    grid-column: 2;
+
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}

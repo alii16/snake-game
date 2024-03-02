@@ -36,6 +36,5 @@ If you have any ideas to make it more interesting, please submit a pull request 
 > Github [@alii16](https://github.com/alii16) &nbsp;&middot;&nbsp;
 > Instagram [@aliiwithahoodie](https://instagram.com/aliiwithahoodie) &nbsp;&middot;&nbsp;
 
-# this code belong to alii16
-
+# this code belong to CodingNepal
 > Youtube [CodingNepal](https://www.youtube.com/codingnepal)
